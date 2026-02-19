@@ -117,7 +117,7 @@ exports.getOrders = async (req, res) => {
         category: productMap[product.sku]?.category,
       })),
     }));
-    res.status(201).json({
+    res.status(200).json({
       message: "Orders fetched successfully",
       orders: updatedOrders,
     });

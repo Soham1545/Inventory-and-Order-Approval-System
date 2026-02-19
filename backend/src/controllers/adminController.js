@@ -130,7 +130,7 @@ exports.deleteProduct = async(req, res) => {
         }
         product.isActive = false;
         await product.save();
-        res.status(201).json({
+        res.status(200).json({
             message: 'Product soft deleted successfully',
         });
     } catch(error){
