@@ -10,7 +10,7 @@ The system supports Admin, Manager, and Sales Executive roles, each with specifi
 
 ### Docker Deployment (Recommended)
 
-git clone <repo-url>
+git clone https://github.com/Soham1545/Inventory-and-Order-Approval-System.git
 cd "Inventory and Order Approval System"
 docker compose up --build
 
