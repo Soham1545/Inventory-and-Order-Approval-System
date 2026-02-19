@@ -22,7 +22,7 @@ exports.invite = async(req, res) => {
             email: email,
             role: role
         });
-        const inviteLink = `${process.env.CLIENT_URL}/signup?email=${email}`;
+        const inviteLink = `${process.env.CLIENT_URL}/auth/signup?email=${email}`;
         await sendEmail(
             email,
             "You're Invited",

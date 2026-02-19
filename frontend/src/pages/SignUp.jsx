@@ -11,11 +11,7 @@ import { useSearchParams } from 'react-router-dom';
 const validationSchema = Yup.object({
   email: Yup.string()
     .email('Invalid email')
-    .required('Email is required')
-    .test('is company email', 'Email must end with @vml.com', (value) => {
-      if (!value) return false;
-      return value.endsWith('@vml.com');
-    }),
+    .required('Email is required'),
   password: Yup.string()
     .required('Password is required')
     .min(8, 'Minimum 8 characters')
@@ -65,7 +61,7 @@ const Signup = () => {
       ) : (
         <form
           onSubmit={formik.handleSubmit}
-          className= "max-w-140 rounded-lg py-15 px-10 w-full items-center bg-white shadow-[0px_4px_15px_0px_#00000033]"
+          className="max-w-140 rounded-lg py-15 px-10 w-full items-center bg-white shadow-[0px_4px_15px_0px_#00000033]"
         >
           <fieldset className="flex flex-col items-start gap-6 text-base">
             <legend className="text-title-font text-2xl font-bold mb-6">
@@ -129,3 +125,4 @@ const Signup = () => {
 };
 
 export default Signup;
+ 
