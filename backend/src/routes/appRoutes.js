@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+
+const {getDashboard, userDetails} = require('../controllers/appController');
+const { protect } = require('../middlewares/authMiddleware');
+
+router.get('/me', protect, userDetails);
+router.get('/home', protect, getDashboard);
+
+module.exports = router;
