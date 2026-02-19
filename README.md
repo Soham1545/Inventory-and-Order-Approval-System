@@ -4,7 +4,7 @@ A full-stack Inventory and Order Approval Management application designed to str
 The system supports Admin, Manager, and Sales Executive roles, each with specific responsibilities to maintain an efficient sales and inventory pipeline.
 
 ### Prerequisites
-- Node.js 18+
+- Node.js 20+
 - npm
 - MongoDB (local or cloud)
 
