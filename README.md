@@ -10,9 +10,9 @@ The system supports Admin, Manager, and Sales Executive roles, each with specifi
 
 ### Docker Deployment (Recommended)
 
-git clone https://github.com/Soham1545/Inventory-and-Order-Approval-System.git
-cd "Inventory and Order Approval System"
-docker compose up --build
+- git clone https://github.com/Soham1545/Inventory-and-Order-Approval-System.git
+- cd "Inventory and Order Approval System"
+- docker compose up --build
 
 **Access URLs:**
 - Frontend: http://localhost:3000
@@ -20,18 +20,18 @@ docker compose up --build
 
 ### Local Development
 
-git clone <repo-url>
-cd "Inventory and Order Approval System"
+- git clone https://github.com/Soham1545/Inventory-and-Order-Approval-System.git
+- cd "Inventory and Order Approval System"
 
 # Frontend
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 # Backend (separate terminal)
-cd backend
-npm install
-npm run dev
+- cd backend
+- npm install
+- npm run dev
 
 **Access URLs:**
 - Frontend: http://localhost:5173
